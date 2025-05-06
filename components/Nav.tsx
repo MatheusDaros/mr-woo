@@ -32,10 +32,7 @@ export const Nav = () => {
       }
     >
       <div>
-        <Logo className={"h-5 w-auto"} />
-      </div>
-      <div className={"ml-auto flex items-center gap-1"}>
-        <Button
+      <Button
           onClick={() => {
             window.open(
               pkg.homepage,
@@ -46,7 +43,11 @@ export const Nav = () => {
           variant={"ghost"}
           className={"ml-auto flex items-center gap-1.5"}
         >
+          
+        <Logo className={"h-5 w-auto"} /> <span>Mr. Woo</span>
         </Button>
+      </div>
+      <div className={"ml-auto flex items-center gap-1"}>
         <Button
           onClick={toggleDark}
           variant={"ghost"}
